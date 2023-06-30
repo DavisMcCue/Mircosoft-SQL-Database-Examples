@@ -1,0 +1,10 @@
+CREATE SCHEMA Procuction
+
+CREATE TABLE Production.Product(
+	ProductID INT NOT NULL PRIMARY KEY IDENTITY,
+	Description_ID VARCHAR(150) NULL,
+	Weight_ID DECIMAL(10,2) SPARSE NULL,
+	AvailabilityDt DATETIME2 NULL,
+	Price MONEY NULL,
+	Instock BIT NULL
+); 
